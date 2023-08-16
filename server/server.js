@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const userRouter = require('./routes/api');
+
+app.use(express.json());
+
 
 if (process.env.NODE_ENV === 'production') {
   // statically serve everything in the build folder on the route '/build'
@@ -13,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // define route handlers
-
+app.use('/api', userRouter);
 
 // catch-all route handler for any requests to an unknown route
 app.use('*', (req, res) => res.sendStatus(404));

@@ -6,11 +6,13 @@ function SheetContainer() {
   return (
     <div className="SheetContainer" style={{backgroundColor: "#F2545B"}}>
       <header className="sheet-container-header">
-        <h1> Sheet Container </h1>
+        <h1> Character Sheet Container </h1>
         <IntroRow />
       </header>
     </div>
   );
 }
+
+
 
 export default SheetContainer;

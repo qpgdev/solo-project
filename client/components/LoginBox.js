@@ -1,6 +1,7 @@
 import React from 'react';
 
 function LoginBox() {
+  // Submit login info to DB
   return (
     <div className="LoginBox" style={{border: "2px solid black"}}>
       <header className="login-box-header">
@@ -14,5 +15,7 @@ function LoginBox() {
     </div>
   );
 }
+
+
 
 export default LoginBox;

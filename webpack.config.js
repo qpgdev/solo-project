@@ -1,5 +1,6 @@
 const path = require ('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const htmlPlugin = new HtmlWebPackPlugin({})
 
 module.exports = {
   entry: './client/index.js',
@@ -31,9 +32,18 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
+    new HtmlWebPackPlugin({
       title: 'Development',
       template: path.resolve(__dirname, './index.html'),
     }),
   ],
+  devServer: {
+    static: {
+      publicPath: '/build',
+      directory: path.resolve(__dirname, 'build'),
+    },
+    proxy: {
+      '/api/**': 'http://localhost:8080',
+    }
+  }
 };
