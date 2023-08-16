@@ -12,6 +12,9 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+// define route handlers
+
+
 // catch-all route handler for any requests to an unknown route
 app.use('*', (req, res) => res.sendStatus(404));
 
@@ -32,3 +35,4 @@ app.listen(3000, () => {
   console.log(`Server is running on port 3000`);
 }); //listens on port 3000 -> http://localhost:3000/
 
+module.exports = app;
