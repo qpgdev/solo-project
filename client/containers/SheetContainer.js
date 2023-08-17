@@ -4,7 +4,7 @@ import IntroBox from '../components/boxes/IntroBox.js';
 
 function SheetContainer() {
   return (
-    <div className="SheetContainer" style={{backgroundColor: "#F2545B"}}>
+    <div className="SheetContainer" style={{border: "2px solid black"}}>
       <header className="sheet-container-header">
         <h1> Character Sheet Container </h1>
         <IntroRow />

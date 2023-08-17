@@ -43,7 +43,7 @@ module.exports = {
       directory: path.resolve(__dirname, 'build'),
     },
     proxy: {
-      '/api/**': 'http://localhost:8080',
+      '/api/**': 'http://localhost:3000',
     }
   }
 };

@@ -16,7 +16,7 @@ mongoose.connect(MONGO_URI, {
 const Schema = mongoose.Schema;
 
 // sets a schema for the 'species' collection
-const sheetSchema = new Schema({
+const userSchema = new Schema({
   username: {
     type: String,
     required: true
