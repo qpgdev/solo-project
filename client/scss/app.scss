@@ -6,6 +6,13 @@
   margin: 0 auto;
 }
 
+.signup-login-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
 .intro-grid-item {
   display: flex;
   align-items: center;

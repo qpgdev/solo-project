@@ -16,11 +16,11 @@ function SignUpBox() {
         },
         body: JSON.stringify({ username, password }),
       });
-        console.log('Request Sent');
+        console.log('Signup Request Sent');
 
       // Response handling
       if (response.ok) {
-        console.log('User signed up successfully.')
+        console.log('Signup response ok.')
       } else {
         console.error('Sign up failed.')
       }

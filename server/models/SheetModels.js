@@ -22,7 +22,7 @@ const sheetSchema = new Schema({
   chronicle: String,
   ambition: String,
   desire: String,
-  predator: String,
+  predatorType: String,
   clan: String,
   generation: String,
   sire: String
